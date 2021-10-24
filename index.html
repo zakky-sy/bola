@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="foto">
+      <!--  Adding an empty <li> here so the final photo doesn't stretch like crazy. Try removing it and see what happens!  -->
+      <li></li>
+    </ul>
+
+    <script>
+      let x = "",
+        i;
+      for (let i = 0; i < 20; i++) {
+        x = x + '<li> <img src="https://source.unsplash.com/random?sig=' + 0 + '" loading="lazy"> </li>';
+      }
+      document.getElementById("foto").innerHTML = x;
+    </script>
+  </body>
+</html>
